@@ -1,0 +1,51 @@
+{
+  "name": "Article",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "T\u00edtulo do artigo"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL amig\u00e1vel do artigo"
+    },
+    "category_id": {
+      "type": "string",
+      "description": "ID da categoria"
+    },
+    "content": {
+      "type": "string",
+      "description": "Conte\u00fado do artigo em HTML"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Resumo curto do artigo"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Imagem de capa do artigo"
+    },
+    "featured": {
+      "type": "boolean",
+      "description": "Artigo em destaque",
+      "default": false
+    },
+    "published": {
+      "type": "boolean",
+      "description": "Artigo publicado",
+      "default": true
+    },
+    "views": {
+      "type": "number",
+      "description": "N\u00famero de visualiza\u00e7\u00f5es",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "category_id",
+    "content"
+  ]
+}
